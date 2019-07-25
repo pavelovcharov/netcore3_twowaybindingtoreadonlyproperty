@@ -13,10 +13,7 @@ namespace Test {
         public ObjectWithReadonlyProperty(string v) {
             readonlyProperty = v;
         }
-
         public string ReadonlyProperty { get { return readonlyProperty; } private set { readonlyProperty = value; } }
-        public ObjectWithReadonlyProperty Nested { get; set; }
-
         public event PropertyChangedEventHandler PropertyChanged;
         public void RaisePropertyChanged() {
             PropertyChanged(this, new PropertyChangedEventArgs(null)); //-V3083
@@ -29,11 +26,8 @@ namespace Test {
             var btn = new Button();
             var data = new ObjectWithReadonlyProperty("12345");
             BindingOperations.SetBinding(btn, Button.ContentProperty, new Binding(nameof(ObjectWithReadonlyProperty.ReadonlyProperty)) { Mode = BindingMode.TwoWay, Source = data });
-
             Assert.AreEqual("12345", btn.Content);
-
             btn.Content = "67890";
-
             Assert.AreEqual("12345", data.ReadonlyProperty);
         }
     }
