@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29111.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp.NetCore3", "WpfApp10\WpfApp.NetCore3.csproj", "{EC273F75-21B4-42DE-9B73-26A1F4318165}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp.NetCore3", "WpfApp.NetCore3\WpfApp.NetCore3.csproj", "{EC273F75-21B4-42DE-9B73-26A1F4318165}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{E9B09C2B-D554-411A-A4E4-A95864973F56}"
 EndProject
